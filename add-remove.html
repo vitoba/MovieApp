@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <link rel="stylesheet" href="add-remove.css">
+    </head>
+    <body>
+        <div class="backdrop"></div>
+        <div class="model">
+            <label for="movieTitle" id="movie_title">Movie Name</label>
+            <input type="text" id="movieTitle" name="movieTitle">
+            <label for="movieUrl" id="movie_name">Image URL</label>
+            <input type="text" id="movieUrl" name="movieUrl">
+            <label for="movieRating" id="movie_rating">Movie Rating</label>
+            <input type="number" id="movieRating" name="movieRating" min=1 max=5>
+            <div class="button-group">
+                <button class="add add_passive">Add</button>
+                <button class="cancel cancel_passive">Cancel</button>
+            </div>          
+        </div>
+        <nav class="main-nav">
+            <h1 class="main-nav__title">Favorite Movies</h1>
+            <button class="main-nav__add">Add Movie</button>
+        </nav>
+        <main class="movie-list">
+           <section class="movie-title">
+               <h1>Favorite Movies List</h1>
+           </section>
+           <section class="movie-detail">
+              <ul class="movie-detail_list">
+                  <!-- <li class="movie_image">
+                      <p class="removeMovie">Remove Move</p>
+                      <img src="https://timesofindia.indiatimes.com/thumb/msid-70008749,width-1200,height-900,resizemode-4/.jpg" alt="Bahubhali">
+                      <h2 class="movie_title">Bahubhali</h2>
+                      <h2 class="movie_rating">Rating: 4/5</h2>
+                  </li> -->
+                  
+                  
+              </ul>
+              
+           </section>
+           
+        </main>
+        <script src="add-remove.js"></script>
+    </body>
+</html>
