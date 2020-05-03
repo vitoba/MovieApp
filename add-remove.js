@@ -59,17 +59,20 @@ const rederDataOnScreen = () =>{
         return;
     }
     
-    const movie = movies[movies.length - 1];
-   
-        const listItem = document.createElement('li');
-        listItem.className = "movie_image";
-        listItem.innerHTML = `
-        <p class="remove-Movie">Remove Move</p>
-        <img src="${movie.imageAddr}" alt="${movie.title}">
-        <h2 class="movie_title">${movie.title}</h2>
-        <h2 class="movie_rating">Rating: ${movie.movRating}</h2>
-        `;
-        addToMovieList.appendChild(listItem);
+    //const movie = movies[movies.length - 1];
+        addToMovieList.innerHTML = "";
+        for(movie of movies){
+            const listItem = document.createElement('li');
+            listItem.className = "movie_image";
+            listItem.innerHTML = `
+            <p class="remove-Movie">Remove Move</p>
+            <img src="${movie.imageAddr}" alt="${movie.title}">
+            <h2 class="movie_title">${movie.title}</h2>
+            <h2 class="movie_rating">Rating: ${movie.movRating}</h2>
+            `;
+            addToMovieList.appendChild(listItem);
+        }
+        
         
     /* const header1  = document.createElement('h2');
     const header2  = document.createElement('h2');
